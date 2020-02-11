@@ -11,6 +11,10 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import About from "./components/layout/About";
+import Footer from "./components/layout/Footer";
+import Contact from "./components/layout/Contact";
+
 // перевырка чи ключ триаэ користувача залогыненим
 if (localStorage.jwtToken) {
   // всьановлює ключ аунтифікаціїї до header auth
@@ -39,9 +43,14 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exct path="/about" component={About} />
+            <Route exct path="/contact" component={Contact} />
+
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
+
+            <Footer />
           </div>
         </Router>
       </Provider>

@@ -17,6 +17,41 @@ class Navbar extends Component {
               <i className="material-icons">code</i>
               uznu_app
             </Link>
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
+              <li>
+                <Link
+                  to="/login"
+                  style={{
+                    fontFamily: "monospace"
+                  }}
+                  className="btn btn-small waves-effect waves-light hoverable blue accent-3"
+                >
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  style={{
+                    fontFamily: "monospace"
+                  }}
+                  className="btn btn-small waves-effect waves-light hoverable blue accent-3"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  style={{
+                    fontFamily: "monospace"
+                  }}
+                  className="btn btn-small waves-effect waves-light hoverable blue accent-3"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
